@@ -1,0 +1,377 @@
+@charset "utf-8";
+
+/*프리텐다드 웹폰트*/
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    font-size: 16px;
+    line-height: 24px;
+    color: #555;
+    min-width: 1450px;
+}
+
+
+/*top*/
+#top {
+    width: 1320px;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#top ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+#top ul li{
+    padding-left: 25px;
+}
+
+#top ul li a{
+    color: #555;
+}
+
+.main_logo{
+    padding-left: 572.5px;
+}
+
+
+/*header*/
+
+#header{
+    background-color: #B5CCB8;
+    }
+
+.header_inner{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    /*자식인 gnb와 snb_box를 정렬*/
+    justify-content: space-between;
+    align-items: center;
+}
+
+#gnb{
+    display: flex;
+    width: 50%;   
+}
+
+#gnb>li{
+    width: 25%;
+    text-align: center;
+    padding: 40px 0;
+}
+
+#gnb> li> a{
+    color: #fff;
+    font-size: 20px;
+}
+
+#gnb> li> a:hover{
+    font-weight: bold;
+}
+
+#gnb> li:hover{
+    background-color: #8FAD8D;
+}
+
+/*4. 서브메뉴 전체가 메인배너 등 다른 태그의 위에 올라와야 하기때문에, .sub에 position:absolute를 준다. 포지션의 기준은 #gnb>li에 잡아준다.*/
+.sub {
+    position: absolute;
+    top: 106px;
+    /*원하는 서브메뉴 높이에 맞춰서 설정*/
+    left: 0;
+    width: 100%;
+    /*position:absolute를 사용할때, 해당 태그에 width속성이 없다면, 자식 중 가장 긴것을 기준으로 너비를 측정하므로 원하는 너비로 같이 꼭 설정해 준다.*/
+    background-color: #8FAD8D;
+    border-top: 1px solid #fff;
+    z-index: 30;
+}
+
+.sub>li>a{
+    color: #fff;
+}
+
+#gnb>li {
+    position: relative;
+}
+
+/*5. 서브메뉴가 호버되었을때 모습을 기준으로, 나머지 모양을 만든다.*/
+.sub{
+    padding: 20px 0;
+}
+
+.sub>li {
+    padding: 10px 0;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+.sub>li>a:hover {
+    font-weight: bold;
+}
+
+
+/*6. 서브의 모양을 다 만들었다면, .sub에 display:none으로 해서, 처음에 안보이게 만든다.*/
+.sub {
+    display: none;
+}
+
+/*7. 호버시 sub전체가 다시 보이게 하는것은 제이쿼리로 처리해준다.*/
+
+
+.search{
+    border:none;
+    background:#fff url(../images/search_25X25.png) no-repeat 360px center;
+    padding: 15px;
+    padding-left: 40px;
+    width: 400px;
+    outline-style: none;
+    border-radius: 20px;
+}
+
+.snb_box{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+}
+
+#snb{
+    display: flex;
+    justify-content: space-between;
+}
+
+#snb li{
+    padding-left: 25px;
+}
+
+
+/*steadyseller*/
+
+#steadyseller{
+    background: url(../images/sub_page_1/bg_grd_steadyseller.jpg) no-repeat;
+    height: 500px;
+}
+
+#steadyseller h1{
+    text-align: center;
+    color: #fff;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+.steadyseller_prd{
+    width: 1320px;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+    padding: 50px 0;
+}
+
+.number {
+    background-color: #fff;
+    color: #B5CCB8;
+    width: 50px;
+    line-height: 50px;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    border-radius: 50%;
+}
+
+    /*화살표 색상 바꾸기*/
+.b_next,
+.b_prev{
+    color: #fff;   
+}
+
+    /*페이지네이션 색상 바꾸기*/
+.b_pag span{
+    background-color: #fff;
+}
+
+
+/*product*/
+
+#product{
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.prd_sort{
+    border-top: 1px solid #777;
+    border-bottom: 1px solid #777;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin: 50px 0;
+}   
+
+.sort_type ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.sort_type ul li{
+    padding-left: 30px;
+}
+
+.prd_list ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.prd_list ul li{
+    width: 33%;
+    position: relative;
+    text-align: center;
+    padding-bottom: 28px;
+}
+
+
+.prd_name{
+    text-align: center;
+    padding-top: 38px;
+}
+
+.prd_price {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 16px;
+}
+
+.prd_btn{
+    position: absolute;
+    top: 380px;
+    left: 330px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*footer*/
+
+#footer{
+    background-color: #B5CCB8;
+    padding: 50px 0;
+}
+
+.footer_inner{
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    color: #fff;
+}
+
+.footer_left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.address ul{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+
+.address ul li a{
+    color: #fff;
+}
+
+.address p{
+    padding-top: 10px;
+}
+
+.footer_right{
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer_right ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_right ul li{
+    opacity: 0.5;
+}
+
+.footer_right ul li:hover{
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+/*pageup버튼*/
+
+.page_top{
+    position: fixed;
+	bottom: 50px;
+	right: 9%;
+    z-index: 10;
+}
+
+

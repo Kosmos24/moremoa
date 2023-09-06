@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450, initial-scale=1.0">
+    <title>MORE MOA</title>
+    
+    <!--파비콘-->
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+
+<body>
+    <!--top-->
+    <div id="top">
+        <!--가운데 정렬-->
+        <h1 class="main_logo">
+            <a href="#"><img src="./images/main_logo175x80.png" alt="메인로고"></a>
+        </h1>
+        <ul>
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+            <li><a href="#">고객센터</a></li>
+        </ul>
+    </div><!--top-->
+
+
+    <!--header-->
+    <div id="header">
+        <!--1. 주된 메뉴를 먼저 만든다.-->
+        <!--3. 밑을 참조하여, 원하는 곳에 서브메뉴 구조를 추가한다. li의 자식이면서 li안의 a태그의 형제 위치에 넣습니다.-->
+        <div class="header_inner">
+            <!--gnb-->
+            <ul id="gnb">
+                <li>
+                    <a href="#">카테고리</a>
+                    <ul class="sub">
+                        <li><a href="#">전 제품</a></li>
+                        <li><a href="#">헤어케어</a></li>
+                        <li><a href="#">바디케어</a></li>
+                        <li><a href="#">주방리빙</a></li>
+                        <li><a href="#">패션잡화</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">ABOUT US</a>
+                    <ul class="sub">
+                        <li><a href="#">업사이클링이란?</a></li>
+                        <li><a href="#">모어모아 소개</a></li>
+                        <li><a href="#">모어모아 스토리</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">커뮤니티</a>
+                    <ul class="sub">
+                        <li><a href="#">업사이클링 아이디어</a></li>
+                        <li><a href="#">워크샵 & 클래스</a></li>
+                        <li><a href="#">파트너사 소개</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">게시판</a>
+                    <ul class="sub">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">이벤트</a></li>
+                        <li><a href="#">Q&A / FAQ</a></li>
+                        <li><a href="#">고객의 소리</a></li>
+                    </ul>
+                </li>
+            </ul><!--gnb-->
+            
+            <!--snb_box-->
+            <div class="snb_box">
+                <!--서치창-->
+                <p><a href="#"><input type="search" class="search"></a></p>
+                <!--서치창-->
+                <ul id="snb">
+                    <li><a href="#" alt="마이페이지">
+                        <img src="./images/mypage_30X30.png" alt="마이페이지아이콘">
+                    </a></li>
+                    <li><a href="#" alt="장바구니">
+                        <img src="./images/basket_30X30.png" alt="장바구니아이콘">
+                    </a></li>
+                    <li><a href="#" alt="관심상품">
+                        <img src="./images/favorite_30X30.png" alt="관심상품아이콘">
+                    </a></li>
+                </ul><!--snb-->
+            </div><!--snb_box-->
+        </div><!--header_inner-->
+    </div><!--header-->
+
+
+    <!--main_contents-->
+    <div id="main_contents">
+        <!-- Swiper -->
+        <div class="swiper main_banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/main_banner_1.jpg" alt="메인배너1"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/main_banner_2.jpg" alt="메인배너2"></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="./images/main_banner_3.jpg" alt="메인배너3"></a>
+                </div>
+            </div>
+            <div class="swiper-button-next b_next"></div>
+            <div class="swiper-button-prev b_prev"></div>
+            <div class="swiper-pagination b_pag"></div>
+        </div><!--메인배너 swiper-->
+    </div><!--main_contents-->
+
+
+    <!--sub_contents_1-->
+    <div id="sub_contents_1">
+        <h2>주간 베스트셀러</h2>
+        <div class="bestseller">
+            <dl>
+                <dt>
+                    <a href="#"><img src="./images/net_1_masked.png" alt="베스트셀러1"></a>
+                </dt>
+                <dd>그물 장바구니</dd>
+                <dd class="price">7,900원</dd>
+                <p class="number">1</p>
+                <p class="prd_btn"><a href="none"><img src="./images/basket_color2.png" alt="장바구니넣기아이콘"></a></p>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#"><img src="./images/soap_1_masked.png" alt="베스트셀러2"></a>
+                </dt>
+                <dd><b>모어모아</b> 그린 재생비누 (1입)</dd>
+                <dd class="price">1,900원</dd>
+                <p class="number">2</p>
+                <p class="prd_btn"><a href="none"><img src="./images/basket_color2.png" alt="장바구니넣기아이콘"></a></p>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#"><img src="./images/brushset_1_masked.png" alt="베스트셀러3"></a>
+                </dt>
+                <dd>욕실 브러쉬 세트</dd>
+                <dd class="price">15,900원</dd>
+                <p class="number">3</p>
+                <p class="prd_btn"><a href="none"><img src="./images/basket_color2.png" alt="장바구니넣기아이콘"></a></p>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#"><img src="./images/tshirts_1_masked.png" alt="베스트셀러4">
+                    </a>
+                </dt>
+                <dd><b>모어모아</b> 재생섬유 티셔츠 (택1)</dd>
+                <dd class="price">9,900원</dd>
+                <p class="number">4</p>
+                <p class="prd_btn"><a href="none"><img src="./images/basket_color2.png" alt="장바구니넣기아이콘"></a></p>
+            </dl>
+            <dl>
+                <dt>
+                    <a href="#"><img src="./images/skincare_1_masked.png" alt="베스트셀러5"></a>
+                </dt>
+                <dd><b>모어모아</b> 효소 세안제 (200ml)</dd>
+                <dd class="price">7,900원</dd>
+                <p class="number">5</p>
+                <p class="prd_btn"><a href="none"><img src="./images/basket_color2.png" alt="장바구니넣기아이콘"></a></p>
+            </dl>
+        </div><!--bestseller--> 
+    </div><!--sub_contents_1-->        
+
+
+    <!--sub_contents_2-->
+    <div id="sub_contents_2"><!--배경 이미지-->
+        <div class="upcycling"><!--가운데 정렬박스-->
+            <!--fix_banner_1-->
+            <div class="banner_box fix_banner_1"><!--왼쪽 레이아웃-->
+                <h2>업사이클링이란?</h2>
+                <a href="#"><img src="./images/upcycling.jpg" alt="업사이클링이란 정사각배너"></a>
+            </div><!--fix_banner_1-->
+
+            <!--banner_box-->
+            <div class="banner_box mini_banner_box">
+                <h2>업사이클링 아이디어</h2>
+                <!--업사이클링 아이디어 swiper-->
+                <div class="swiper mini_banner"><!--오른쪽 레이아웃-->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/upcycling_idea_1.jpg" alt="업사이클링아이디어1"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/upcycling_idea_2.jpg" alt="업사이클링아이디어2"></a>
+                        </div>
+                    </div><!-- mini_banner-->
+                    <div class="swiper-button-next b_next"></div>
+                    <div class="swiper-button-prev b_prev"></div>
+                    <div class="swiper-pagination b_pag"></div>
+                </div><!--업사이클링 아이디어 swiper-->
+            </div><!--banner_box-->
+
+        </div><!--가운데 정렬박스-->
+    </div><!--sub_contents_2--> 
+    
+    
+    <!--sub_contents_3-->
+    <div id="sub_contents_3"><!--배경 이미지-->
+        <div class="workshop"><!--가운데 정렬박스-->
+            <!--banner_box-->
+            <div class="banner_box mini_banner_box">
+                <h2>워크샵 & 클래스</h2>
+                <!--워크샵&클래스 swiper-->
+                <div class="swiper mini_banner"><!--왼쪽 레이아웃-->
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/workshop_1.jpg" alt="워크샵&클래스1"></a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img src="./images/class_1.jpg" alt="워크샵&클래스2"></a>
+                        </div>
+                    </div><!--mini_banner-->
+                    <div class="swiper-button-next b_next"></div>
+                    <div class="swiper-button-prev b_prev"></div>
+                    <div class="swiper-pagination b_pag"></div>
+                </div><!--워크샵&클래스 swiper-->
+            </div><!--banner_box-->
+
+            <!--fix_banner_2-->
+            <div class="fix_banner_2"><!--오른쪽 레이아웃-->
+                <h2>캠페인</h2>
+                <a href="#"><img src="./images/campaign.jpg" alt="캠페인 정사각배너"></a>
+            </div><!--fix_banner_2-->
+
+        </div><!--가운데 정렬박스-->
+    </div><!--sub_contents_3-->
+
+
+    <!--footer-->
+    <div id="footer"><!--배경색-->
+        <div class="footer_inner"><!--가운데 정렬박스-->
+            <div class="footer_left">
+                <p><a href="#"><img src="./images/main_logo_white230x105.png" alt="영문흰색로고"></a></p>
+                <p><a href="#"><img src="./images/korean_logo_238x50.png" alt="한글흰색로고"></a></p>
+            </div>
+            <div class="address">
+                <ul>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+                <p>주식회사 모어모아 &nbsp;&nbsp; 대표 : 윤지현</p>
+                <p>사업자번호 : 000-00-00000 &nbsp;&nbsp; 통신판매업신고 제 2023-부</p>
+                <p>전화 : 051-1234-4567 &nbsp;&nbsp; E-MAIL : contact@moremoa.co.kr</p>
+                <p>주소 : 부산광역시 중구 모아로 123</p>
+                <p>COPYRIGHT(C) 2023(주)모어모아 &nbsp;&nbsp; ALL RIGHTS RESERVED</p>
+            </div>
+            <div class="footer_right">
+                <h3>고객센터</h3>
+                <h1>070-123-4567</h1>
+                <p>월~금 09:00~18:00 (점심시간 12:00~13:30)</p>
+                <ul>
+                    <li><a href="#"><img src="./images/Facebook_50x50.png" alt="페이스북로고"></a></li>
+                    <li><a href="#"><img src="./images/Instagram_50x50.png" alt="인스타그램로고"></a></li>
+                    <li><a href="#"><img src="./images/WhatsApp_50x50.png" alt="왓츠앱로고"></a></li>
+                </ul>
+
+            </div>
+        </div><!--가운데 정렬박스-->       
+    </div><!--footer-->
+
+    <a href="#" class="page_top">
+        <img src="./images/pageup.png">
+    </a>
+
+
+    <!--라이브러리-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+     integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./js/sub_menu.js"></script>
+
+
+
+
+    <!--메인배너 스와이퍼-->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".main_banner",{
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+            speed: 3000,
+        });
+    </script>
+    <!--메인배너 스와이퍼-->
+
+
+    <!--업사이클링아이디어, 워크샵&클래스 미니 배너 스와이퍼-->
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mini_banner",{
+            spaceBetween: 0,
+            centeredSlides: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+            speed: 4000,
+        });
+    </script>
+    <!--업사이클링아이디어, 워크샵&클래스 미니 배너 스와이퍼-->
+
+    
+</body>
+</html>
